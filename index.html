@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DORM / REQUEST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+    <header>
+        <div class="logo">DORM<span>/</span>REQUEST</div>
+        <div class="online"><i></i> API ONLINE</div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div>
+                <p class="label">STUDENT HOUSING / VALIDATION</p>
+                <h1>ROOM<br><span>REQUEST.</span></h1>
+                <p class="subtitle">
+                    Система проверки заявки на заселение
+                    студента в общежитие.
+                </p>
+            </div>
+
+            <div class="circle">
+                <span>01</span>
+            </div>
+        </section>
+
+        <section class="request">
+            <div class="request-head">
+                <span>01 / REQUEST DATA</span>
+                <span>ONLY GET REQUESTS</span>
+            </div>
+
+            <div class="form">
+                <div class="field">
+                    <label for="studentId">ID СТУДЕНТА</label>
+                    <input id="studentId" type="number" placeholder="Например: 1">
+                </div>
+
+                <div class="field">
+                    <label for="buildingNumber">НОМЕР КОРПУСА</label>
+                    <input id="buildingNumber" type="number" placeholder="Например: 2">
+                </div>
+
+                <div class="field">
+                    <label for="roomNumber">НОМЕР КОМНАТЫ</label>
+                    <input id="roomNumber" type="number" placeholder="Например: 102">
+                </div>
+
+                <button id="checkButton">
+                    CHECK REQUEST <span>↗</span>
+                </button>
+            </div>
+
+            <div id="result" class="result">
+                <p class="ready">READY FOR VALIDATION</p>
+                <p>Введите данные заявки и нажмите кнопку проверки.</p>
+            </div>
+        </section>
+
+        <section class="rules">
+            <div>
+                <span>01</span>
+                <p>Студент должен быть иногородним.</p>
+            </div>
+            <div>
+                <span>02</span>
+                <p>Корпус должен быть предназначен для студентов.</p>
+            </div>
+            <div>
+                <span>03</span>
+                <p>Комната должна быть свободна.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>DORM / REQUEST — 2026</span>
+        <span>FETCH API · ASYNC / AWAIT</span>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
